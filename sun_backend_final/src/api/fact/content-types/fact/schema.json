@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "facts",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Article"
+    "singularName": "fact",
+    "pluralName": "facts",
+    "displayName": "Fact"
   },
   "options": {
     "draftAndPublish": true
@@ -14,10 +14,16 @@
     "Title": {
       "type": "string"
     },
-    "Body": {
+    "FactDesc": {
       "type": "richtext"
     },
-    "article_image": {
+    "Publish_date": {
+      "type": "date"
+    },
+    "Publish_org": {
+      "type": "string"
+    },
+    "Image": {
       "allowedTypes": [
         "images",
         "files",
@@ -25,10 +31,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false
-    },
-    "article_date": {
-      "type": "date"
+      "multiple": true
     }
   }
 }
